@@ -12,6 +12,6 @@ describe('Index Controller', function () {
     const next = sinon.stub()
     controller.index(req, res, next)
     expect(res.render.getCall(0).args[0]).to.equal('index')
-    expect(res.render.getCall(0).args[1]).to.deep.equal({ title: 'Semaphore CI' })
+    expect(res.render.getCall(0).args[1]).to.deep.equal({ title: 'Semaphore CI !!!' })
   })
 })
